@@ -1,17 +1,32 @@
+@charset "UTF-8";
 @import url(./reset.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --duck-egg-blue: #d0f0ec;
-  --dodger-blue: #39f;
-  --dark-cream: #ffeb99;
-  --marigold: #fc0;
-  --aquamarine: #01ccb8;
-  --bright-lavender: #c6f;
-  --very-light-blue: #d6ebff;
-  --melon: #ff855c;
-  --light-lavendar: #ebc2ff;
-  --ff-6633: #f63;
-  --151515: #151515;
   --white: #fff;
+}
+
+html {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+Select {
+  font-family: inherit; /* 폰트 상속 */
+  background: url(../img/btn-drop-arrow.svg) no-repeat 98% 50%;
+  /* 네이티브 화살표를 커스텀 화살표로 대체 */
+  -webkit-appearance: none;
+  /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+Select::-ms-expand {
+  display: none; /* 화살표 없애기 for IE10, 11*/
+}
+
+.lineClamp3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }/*# sourceMappingURL=style.css.map */
