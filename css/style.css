@@ -9,6 +9,10 @@ html {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
+body {
+  min-width: 360px;
+}
+
 Select {
   font-family: inherit; /* 폰트 상속 */
   background: url(../img/btn-drop-arrow.svg) no-repeat 98% 50%;
@@ -21,6 +25,14 @@ Select {
 
 Select::-ms-expand {
   display: none; /* 화살표 없애기 for IE10, 11*/
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
 }
 
 .lineClamp3 {
