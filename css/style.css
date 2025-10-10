@@ -41,4 +41,80 @@ input {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background-color: #fff;
+  padding: 0 40px;
+  position: relative;
+}
+.gnb .home {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  padding: 16px;
+}
+.gnb ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.gnb ul a {
+  padding: 16px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  border-radius: 4px;
+}
+.gnb ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.hero {
+  width: 100%;
+  height: 870px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: -1.28px;
+}
+.hero p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard GOV";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.36px;
 }/*# sourceMappingURL=style.css.map */
