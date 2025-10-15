@@ -124,11 +124,6 @@ h3 {
   letter-spacing: -0.72px;
 }
 
-@media screen and (max-width: 768px) {
-  html.scrollStop {
-    overflow: hidden;
-  }
-}
 .gnb {
   display: flex;
   align-items: center;
@@ -176,6 +171,9 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  html.scrollStop {
+    overflow: hidden;
+  }
   .gnb .hambuger {
     display: block;
   }
