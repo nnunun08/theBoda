@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	min-width: 360px;
+	// min-width: 360px;
 }
 
 Select {
@@ -98,6 +98,7 @@ input {
 	line-height: 140%; /* 22.4px */
 	letter-spacing: -0.32px;
 	border: 0;
+	white-space: nowrap;
 	&:hover {
 		background-color: #333;
 	}
@@ -146,7 +147,7 @@ h3 {
 		position: absolute;
 		// top: 50%;
 		top: 3.5px;
-		left: 24px;
+		left: 21px;
 		// transform: translateY(-50%);
 		padding: 16px;
 	}
@@ -156,7 +157,7 @@ h3 {
 		align-items: center;
 		gap: 40px;
 		a {
-			padding: 16px;
+			padding: 16px 8px;
 			color: #000;
 			font-family: Pretendard;
 			font-size: 16px;
@@ -228,6 +229,8 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
+	padding: 0 40px;
+	box-sizing: border-box;
 
 	img {
 		position: absolute;
@@ -598,6 +601,8 @@ footer {
 			margin-bottom: 4px;
 			b {
 				font-weight: 700;
+				display: inline-block;
+				margin-right: 8px;
 			}
 		}
 	}
@@ -1302,5 +1307,436 @@ footer {
 		font-weight: 400;
 		line-height: 140%; /* 29.4px */
 		letter-spacing: -0.42px;
+	}
+}
+
+@media screen and (max-width:1280px) {
+	.gnb ul a {
+		font-size: 14px;
+	}
+	h3 {
+		font-size: 36px;
+		font-size: 24px;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.inner {
+		padding: 0 20px;
+	}
+	.btn-border,
+	.btn-black {
+		font-size: 15px;
+		padding-inline: 28px;
+	}
+	.hero {
+		height: 660px;
+		padding: 0 20px;
+	}
+	.contact h2,
+	.thebodaService h2,
+	.company h2,
+	.hero h2 {
+		font-size: 38px;
+	}
+	.feature {
+		padding-block: 120px;
+	}
+	.feature h3 {
+		// font-size: 36px;
+		font-size: 24px;
+	}
+	.feature p {
+		// font-size: 21px;
+		font-size: 18px;
+	}
+	.feature .between {
+		flex-wrap: wrap;
+		// flex-direction: column;
+		// align-items: flex-start;
+		// justify-content: flex-start;
+		gap: 20px;
+	}
+	.feature .bottom h3 {
+		// font-size: 32px;
+		font-size: 24px;
+		margin-bottom: 32px;
+		text-align: left;
+	}
+	.feature .bottom ul {
+		flex-wrap: wrap;
+		// flex-direction: column;
+		gap: 20px;
+	}
+	.feature .bottom ul li {
+		flex: 0 0 auto;
+		width: calc((100% - 20px) / 2);
+		display: flex;
+		gap: 20px;
+		padding: 14px 0;
+	}
+	.feature .bottom h4 {
+		flex: 0 0 40%;
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+	.feature .bottom p {
+		font-size: 14px;
+	}
+	.summarySection {
+		height: 640px;
+	}
+	.summarySection h3 {
+		font-size: 36px;
+		font-size: 24px;
+		margin-bottom: 60px;
+		margin-bottom: 40px;
+	}
+	.summarySection .desc {
+		font-size: 40px;
+		font-size: 28px;
+	}
+	.summarySection .desc bold {
+		font-size: 64px;
+		font-size: 42px;
+	}
+	.serviceVideo {
+		padding: 160px 0;
+	}
+	.serviceVideo h3 {
+		font-size: 24px;
+	}
+	.ourSkill h3 {
+		margin-bottom: 40px;
+	}
+	.ourSkill ul {
+		gap: 20px;
+	}
+	.ourSkill ul li {
+		padding: 30px 20px;
+		min-height: 180px;
+	}
+	.ourSkill ul li .name {
+		font-size: 21px;
+	}
+	.contactTheBoda {
+		height: 380px;
+		.inner {
+			padding-inline: 10px;
+		}
+	}
+	.contactTheBoda h3 {
+		font-size: 42px;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	footer {
+		padding: 60px 0;
+	}
+	footer .inner {
+		font-size: 12px;
+	}
+	footer .inner .info div {
+		margin-bottom: 2px;
+	}
+	footer .inner strong {
+		font-size: 27px;
+		font-size: 21px;
+	}
+	.company {
+		padding-block: 80px 100px;
+	}
+	.company h2 {
+		margin-bottom: 60px;
+	}
+	.company .sub {
+		font-size: 36px;
+		font-size: 28px;
+	}
+	.company .divider {
+		height: 26px;
+	}
+	.company p {
+		font-size: 18px;
+		margin-bottom: 80px;
+	}
+
+	.philosophy {
+		padding-block: 60px 80px;
+	}
+	.philosophy h3 {
+		font-size: 28px;
+		margin-bottom: 16px;
+	}
+	.philosophy strong {
+		// font-size: 18px;
+	}
+	.philosophy p {
+		font-size: 18px;
+	}
+	.philosophy ul {
+		margin-top: 60px;
+		gap: 20px;
+	}
+	.philosophy ul li .tit {
+		font-size: 24px;
+		font-size: 21px;
+	}
+	.philosophy ul li .body .list {
+		font-size: 18px;
+	}
+
+	.contact img {
+		max-width: 420px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	
+	.feature .bottom ul li {
+		width: 100%;
+	}
+	.summarySection img {
+		left: 30%;
+	}
+	.feature .between {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.ourSkill {
+		padding-bottom: 120px;
+	}
+	.ourSkill ul li {
+		flex-basis: 100%;
+		min-height: 150px;
+	}
+	.ourSkill ul li .name {
+		font-size: 18px;
+	}
+	.ourSkill ul li .serial {
+		font-size: 13px;
+	}
+	.ourClient {
+		padding-block: 80px;
+	}
+	.ourClient h3 {
+		font-size: 24px;
+	}
+	.ourClient .inner {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.ourClient ul li {
+		padding-block: 10px;
+	}
+	.ourClient .tit {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.ourSkill-wrap {
+		padding-top: 80px;
+	}
+
+	.thebodaService h3 {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	.thebodaService .conWrap {
+		gap: 30px 20px;
+	}
+	.thebodaService .conWrap li {
+		width: calc((100% - 20px) / 2)
+	}
+	.thebodaService .conWrap li img {
+		margin-bottom: 10px;
+	}
+	.thebodaService .subTit {
+		font-size: 16px;
+	}
+	.thebodaService .tit {
+		font-size: 21px;
+		margin-bottom: 4px;
+	}
+	.thebodaService p {
+		font-size: 14px;
+	}
+	.thebodaService .list::before {
+		top: 11px;
+	}
+
+	.thebodaService b {
+		margin-top: 20px;
+	}
+	.thebodaService .tag span {
+		font-size: 13px;
+		padding: 4px 8px;
+		line-height: 160%;
+	}
+	.thebodaService .b2b,
+	.thebodaService .b2c {
+		margin-bottom: 100px;
+	}
+	.contact .inner {
+		flex-direction: column;
+	}
+	.contact img {
+		max-width: 100%;
+	}
+	.contact p {
+		font-size: 18px;
+	}
+	.feedback {
+		margin-bottom: 80px;
+	}
+	.feedback h3 {
+		font-size: 24px;
+	}
+	.feedback .item {
+		width: 260px;
+		padding-inline: 6px;
+	}
+	.feedback .card .body {
+		font-size: 14px;
+		padding: 16px;
+		padding-top: 42px;
+	}
+
+	.guestBoard h3 {
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
+	.guestBoard .board .list {
+		padding: 20px;
+		margin-inline: -20px;
+		gap: 4px;
+	}
+	.guestBoard .tit {
+		font-size: 14px;
+	}
+	.guestBoard .date {
+		font-size: 14px;
+		width: 76px;
+	}
+	.guestBoard .name {
+		font-size: 14px;
+		width: 52px;
+	}
+	.guestBoard .badge {
+		width: 48px;
+		font-size: 12px;
+		padding-inline: 2px;
+	}
+	.guestBoard .pagenation {
+		margin-top: 20px;
+	}
+	.guestBoard .pagenation .next,
+	.guestBoard .pagenation .pageNum li {
+		width: 24px;
+		height: 24px;
+		font-size: 14px;
+	}
+	.guestBoard .pagenation .pageNum {
+		gap: 6px;
+	}
+	.guestBoard {
+		padding-bottom: 100px;
+	}
+	.counsel {
+		padding-bottom: 120px;
+	}
+	.counsel h3 {
+		font-size: 21px;
+	}
+	.counsel .list {
+		gap: 4px;
+		font-size: 14px;
+	}
+	.counsel .feild {
+		height: 48px;
+		font-size: 14px;
+	}
+	.counsel .btn-black {
+		font-size: 16px;
+		height: 52px;
+	}
+
+	.blackSection {
+		padding-block: 100px;
+	}
+	.blackSection h3 {
+		font-size: 38px;
+	}
+	.blackSection p {
+		font-size: 16px;
+	}
+	.thebodaService .bgImg {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width:520px) {
+	footer .inner {
+		flex-direction: column;
+	}
+	footer .inner .right {
+		gap: 40px;
+		flex-direction: column;
+	}
+	.company .sub {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 8px;
+	}
+	.company .divider {
+		height: 1px;
+		width: 26px;
+	}
+	.company p {
+		font-size: 16px;
+	}
+	.philosophy p {
+		font-size: 16px;
+	}
+	.philosophy ul {
+		// flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.philosophy ul li {
+		flex: 1 0 100%;
+	}
+	.philosophy ul li .tit {
+		font-size: 16px;
+	}
+	.philosophy ul li .body {
+		padding: 16px 8px;
+		gap: 8px;
+	}
+	.philosophy ul li .body .list {
+		font-size: 14px;
+	}
+	.thebodaService h3 {
+		margin-bottom: 30px;
+	}
+	.thebodaService .conWrap li {
+		width: 100%;
+	}
+	.thebodaService .subTit {
+		font-size: 14px;
+	}
+	.thebodaService .tit {
+		font-size: 18px;
+	}
+	.thebodaService b {
+		font-size: 14px;
+		margin-top: 8px;
+	}
+	.thebodaService .list {
+		font-size: 13px;
+		line-height: 160%;
+	}
+	.thebodaService .list::before {
+		top: 8px;
 	}
 }
